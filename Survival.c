@@ -26,7 +26,7 @@ typedef struct Person{
 
 
 
-struct Person  init_player(){
+ Person init_player(){
 	//first start by intitializing a Person called player
 	Person player;
 	player.health = MAX;
