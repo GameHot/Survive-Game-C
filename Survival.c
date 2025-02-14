@@ -9,7 +9,6 @@ typedef struct Coord {
 	int y;
 }Coord;
 
-
 typedef struct Item{
 	char name;
 	int total;
@@ -27,7 +26,8 @@ typedef struct Person{
 }Person;
 
 
-Person  init_player(){
+
+Person init_player(){
 
 	//first start by intitializing a Person called player
 	Person player;
@@ -37,9 +37,11 @@ Person  init_player(){
 	player.coordinates.y = 0;
 	player.inventory_count = 0;
  
-       
+
+
+
 	//tells us that inventory is empty at the start of the game
-	for(int i; i < MAX_INVENTORY; i++){
+	for(int i = 0; i < MAX_INVENTORY; i++){
 		player.inventory[i].name = '\0';
 		player.inventory[i].total = 0;
 	}
